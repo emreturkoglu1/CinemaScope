@@ -1,3 +1,5 @@
+///Bu projede yer alan her Api ve Veriseti Eğitim Amaçlı Kullanılmıştır///
+
 # 🎬 CinemaScope - Film ve Kısa Film Platformu
 
 CinemaScope, film tutkunları için geliştirilmiş, modern ve kullanıcı dostu bir platformdur. Popüler filmleri keşfetme, izleme listenizi yönetme ve bağımsız kısa filmleri izleme imkanı sunar.
@@ -86,9 +88,6 @@ src/
 - [ ] Gelişmiş yorum sistemi
 - [ ] Kısa filmler için oynatma ve izleme analitikleri
 
-## 📜 Lisans
-
-Bu proje [MIT lisansı](LICENSE) altında lisanslanmıştır.
 
 ## 🙏 Teşekkürler
 
