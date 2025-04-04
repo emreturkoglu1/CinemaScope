@@ -1,46 +1,186 @@
-# Getting Started with Create React App
+# 🎬 CinemaScope - Film ve Kısa Film Platformu
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CinemaScope, film tutkunları için geliştirilmiş, modern ve kullanıcı dostu bir platformdur. Popüler filmleri keşfetme, izleme listenizi yönetme ve bağımsız kısa filmleri izleme imkanı sunar.
 
-## Available Scripts
+![CinemaScope](https://i.imgur.com/placeholder.png)
 
-In the project directory, you can run:
+## ✨ Özellikler
 
-### `npm start`
+- 🎥 TMDB API ile entegre edilen zengin film veritabanı
+- 📱 Tamamen duyarlı (responsive) tasarım
+- 💾 İzleme listesi, beğenilen filmler ve izlenen filmler için yerel depolama
+- 🔍 Gelişmiş film arama ve filtreleme özellikleri
+- 📊 Kullanıcı profili ve istatistikleri
+- 📹 Bağımsız yapımcılar için kısa film yükleme ve paylaşma alanı
+- ❤️ Beğenme, oylamak ve yapımcıları destekleme imkanı
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🚀 Başlarken
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Gereksinimler
+- Node.js (v14.0.0 veya üstü önerilir)
+- npm veya yarn
 
-### `npm test`
+### Kurulum
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Projeyi klonlayın:
+```bash
+git clone https://github.com/YOUR_USERNAME/cinemascope.git
+cd cinemascope
+```
 
-### `npm run build`
+2. Bağımlılıkları yükleyin:
+```bash
+npm install
+# veya
+yarn install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. `.env` dosyası oluşturun (veya `src/services/api.ts` dosyasını düzenleyin) ve TMDB API anahtarınızı ekleyin:
+```
+REACT_APP_TMDB_API_KEY=your_api_key_here
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Uygulamayı başlatın:
+```bash
+npm start
+# veya
+yarn start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. Tarayıcınızda `http://localhost:3000` adresine giderek uygulamayı görüntüleyin.
 
-### `npm run eject`
+## 🔑 TMDB API Anahtarı Alımı
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Bu uygulama [The Movie Database (TMDB) API](https://www.themoviedb.org/documentation/api) kullanmaktadır. Çalışabilmesi için bir API anahtarına ihtiyacınız vardır:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. [TMDB](https://www.themoviedb.org) sitesine kaydolun
+2. [API ayarları](https://www.themoviedb.org/settings/api) sayfasından API anahtarı talep edin
+3. Aldığınız API anahtarını `src/services/api.ts` dosyasındaki `API_KEY` değişkenine atayın
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🛠️ Teknolojiler
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React Router](https://reactrouter.com/)
+- [Axios](https://axios-http.com/)
+- [TMDB API](https://www.themoviedb.org/documentation/api)
 
-## Learn More
+## 🎯 Proje Yapısı
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+src/
+├── components/     # Yeniden kullanılabilir UI bileşenleri
+├── context/        # React context tanımlamaları
+├── hooks/          # Özel React hooks
+├── pages/          # Ana sayfa bileşenleri
+├── services/       # API ve veri servisleri
+├── types/          # TypeScript tür tanımlamaları
+└── utils/          # Yardımcı işlevler
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📝 Yapılacaklar ve Gelecek Özellikler
+
+- [ ] Kullanıcı hesapları ve kimlik doğrulama sistemi
+- [ ] Çevrimiçi veritabanı entegrasyonu
+- [ ] Sosyal medya bağlantıları
+- [ ] Gelişmiş yorum sistemi
+- [ ] Kısa filmler için oynatma ve izleme analitikleri
+
+## 📜 Lisans
+
+Bu proje [MIT lisansı](LICENSE) altında lisanslanmıştır.
+
+## 🙏 Teşekkürler
+
+- [The Movie Database (TMDB)](https://www.themoviedb.org) - Sağladıkları API için
+- [React ve ekosistemi](https://reactjs.org/) - Harika araçlar için
+
+---
+
+# 🎬 CinemaScope - Movie and Short Film Platform [English]
+
+CinemaScope is a modern and user-friendly platform developed for movie enthusiasts. It offers the ability to discover popular movies, manage your watchlist, and watch independent short films.
+
+## ✨ Features
+
+- 🎥 Rich movie database integrated with TMDB API
+- 📱 Fully responsive design
+- 💾 Local storage for watchlists, liked movies, and watched movies
+- 🔍 Advanced movie search and filtering features
+- 📊 User profile and statistics
+- 📹 Short film upload and sharing area for independent filmmakers
+- ❤️ Like, vote, and support options for filmmakers
+
+## 🚀 Getting Started
+
+### Requirements
+- Node.js (v14.0.0 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the project:
+```bash
+git clone https://github.com/YOUR_USERNAME/cinemascope.git
+cd cinemascope
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Create a `.env` file (or edit the `src/services/api.ts` file) and add your TMDB API key:
+```
+REACT_APP_TMDB_API_KEY=your_api_key_here
+```
+
+4. Start the application:
+```bash
+npm start
+# or
+yarn start
+```
+
+5. Navigate to `http://localhost:3000` in your browser to view the application.
+
+## 🔑 Getting a TMDB API Key
+
+This application uses [The Movie Database (TMDB) API](https://www.themoviedb.org/documentation/api). You need an API key for it to work:
+
+1. Sign up on the [TMDB](https://www.themoviedb.org) website
+2. Request an API key from the [API settings](https://www.themoviedb.org/settings/api) page
+3. Assign the API key you received to the `API_KEY` variable in the `src/services/api.ts` file
+
+## 🛠️ Technologies
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React Router](https://reactrouter.com/)
+- [Axios](https://axios-http.com/)
+- [TMDB API](https://www.themoviedb.org/documentation/api)
+
+## 📝 Upcoming Features
+
+- [ ] User accounts and authentication system
+- [ ] Online database integration
+- [ ] Social media connections
+- [ ] Advanced comment system
+- [ ] Playback and viewing analytics for short films
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgements
+
+- [The Movie Database (TMDB)](https://www.themoviedb.org) - For providing the API
+- [React and its ecosystem](https://reactjs.org/) - For the great tools
+
+---
+
+
+
+
