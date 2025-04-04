@@ -169,17 +169,9 @@ This application uses [The Movie Database (TMDB) API](https://www.themoviedb.org
 - [ ] Advanced comment system
 - [ ] Playback and viewing analytics for short films
 
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## 🙏 Acknowledgements
 
 - [The Movie Database (TMDB)](https://www.themoviedb.org) - For providing the API
 - [React and its ecosystem](https://reactjs.org/) - For the great tools
 
 ---
-
-
-
-
